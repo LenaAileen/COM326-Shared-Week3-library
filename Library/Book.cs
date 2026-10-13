@@ -8,9 +8,52 @@ namespace Library
 {
     public class Book
     {
-        public string Title;
-        public string Author;
-        public string ISBN;
+
+        //private fields
+             private string title;
+             private string author;
+             private string isbn;
+
+
+        //public properties
+        public string Title
+                    {
+                        get { return title; }  // get method
+                        set { title = value; } // set method
+                    }
+
+
+        public string Author
+            {
+              get { return author; }  // get method
+              set { author = value; } // set method
+            }
+
+
+        public string ISBN
+            {
+                get { return isbn; }  // get method
+                set { isbn = value; } // set method
+            }
+
+
+
+
+        public Book(string bookTitle,string bookAuthor,string bookISBN)
+        {
+           Title=bookTitle;
+           Author=bookAuthor;
+           ISBN = bookISBN;
+        }
+          
+
+        
+
+
+
+      
+
+        //Constructor
 
 
         public void DisplayInfo()
